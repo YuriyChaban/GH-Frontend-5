@@ -1,0 +1,903 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 19, ../sass/screen.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*--------------------------------------------wrapper-----------------------------------*/
+/* line 24, ../sass/screen.scss */
+.wrapper {
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-size: 8.33333%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
+/* line 12, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.7/sass/susy/output/support/_clearfix.scss */
+.wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/*--------------------------------------------end wrapper-----------------------------------*/
+/*------------------------------------------navigation----------------------------------*/
+/* line 29, ../sass/screen.scss */
+.header-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-size: 8.33333%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
+/* line 12, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.7/sass/susy/output/support/_clearfix.scss */
+.header-wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 49, ../sass/screen.scss */
+header {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #edeff1;
+  color: #fff;
+}
+/* line 58, ../sass/screen.scss */
+header .logo {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  display: block;
+  width: 158px;
+  height: 60px;
+  overflow: hidden;
+  text-transform: uppercase;
+  font: 700 26px "Roboto Slab", serif;
+}
+/* line 69, ../sass/screen.scss */
+header .logo a {
+  color: #31353e;
+  text-decoration: none;
+}
+/* line 74, ../sass/screen.scss */
+header .logo .logo-description {
+  display: block;
+  width: 155px;
+  color: #dd4b2b;
+  font: 400 16px "Roboto Slab", serif;
+  text-transform: none;
+}
+
+/* line 83, ../sass/screen.scss */
+#nav {
+  position: absolute;
+  right: 0;
+}
+/* line 87, ../sass/screen.scss */
+#nav ul li {
+  float: left;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+}
+/* line 92, ../sass/screen.scss */
+#nav ul li a {
+  display: block;
+  color: #31353e;
+  text-decoration: none;
+  padding: 0 10px;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+}
+/* line 101, ../sass/screen.scss */
+#nav ul li a:hover {
+  color: #edeff1;
+}
+/* line 105, ../sass/screen.scss */
+#nav ul li:hover {
+  background: #dd4b2b;
+}
+
+@media (max-width: 768px) {
+  /* line 114, ../sass/screen.scss */
+  header .header-wrapper {
+    width: 100%;
+  }
+  /* line 115, ../sass/screen.scss */
+  header h1 {
+    left: 3%;
+  }
+
+  /* line 119, ../sass/screen.scss */
+  #nav {
+    width: 100%;
+    top: 60px;
+  }
+  /* line 122, ../sass/screen.scss */
+  #nav:before {
+    content: '\2630';
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: -50px;
+    color: #31353e;
+    line-height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  /* line 133, ../sass/screen.scss */
+  #nav ul {
+    background: #edeff1;
+    width: 100%;
+  }
+  /* line 136, ../sass/screen.scss */
+  #nav ul li {
+    float: none;
+  }
+  /* line 138, ../sass/screen.scss */
+  #nav ul li a {
+    padding: 10px 3%;
+    line-height: 20px;
+    border-top: 1px solid #dd4b2b;
+  }
+
+  /* line 147, ../sass/screen.scss */
+  #nav ul {
+    transition: 350ms;
+    -moz-transition: 350ms;
+    -webkit-transition: 350ms;
+    transform: perspective(600) rotate3d(0, 0, 0, 0);
+    -moz-transform: perspective(600) rotate3d(0, 0, 0, 0);
+    -webkit-transform: perspective(600) rotate3d(1, 0, 0, -90deg);
+    transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -webkit-transform-origin: 50% 0;
+  }
+
+  /* line 158, ../sass/screen.scss */
+  #nav.open ul {
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
+  }
+}
+/*------------------------------------------end navigation----------------------------------*/
+/*---------------------------------------------hero-----------------------------------------*/
+/* line 166, ../sass/screen.scss */
+.hero {
+  box-sizing: border-box;
+  padding: 70px 0;
+  background: url("../images/hero_bg.png") top center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+/* line 173, ../sass/screen.scss */
+.hero .hero-title {
+  padding: 50% 0 20%;
+  color: #fff;
+  font: 300 42px/48px "Roboto Slab", serif;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+/* line 180, ../sass/screen.scss */
+.hero .hero-title .hero-description {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* line 187, ../sass/screen.scss */
+.hero .hero-articless {
+  margin: 0 auto 50px;
+  text-align: center;
+}
+/* line 191, ../sass/screen.scss */
+.hero .hero-articless li {
+  display: inline-block;
+  width: 280px;
+  margin: 0 20px;
+  padding-top: 30px;
+  text-align: center;
+}
+/* line 198, ../sass/screen.scss */
+.hero .hero-articless li:first-child {
+  padding-top: 0;
+}
+/* line 202, ../sass/screen.scss */
+.hero .hero-articless li .articles-item {
+  padding: 20px;
+  color: #fff;
+  font: 700 30px/24px "Roboto Slab", serif;
+}
+/* line 208, ../sass/screen.scss */
+.hero .hero-articless li .item-description {
+  color: #fff;
+  font: 300 15px/30px "Roboto Slab", serif;
+  text-align: center;
+}
+/* line 216, ../sass/screen.scss */
+.hero .hero-link {
+  clear: both;
+  display: block;
+  width: 213px;
+  height: 55px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
+  color: #612316;
+  font: 400 18px/55px "Roboto Slab", serif;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+}
+/* line 233, ../sass/screen.scss */
+.hero .hero-link:hover {
+  color: #fff;
+  background: #612316;
+}
+
+/*---------------------------------------------end hero-----------------------------------------*/
+/*---------------------------------------------news---------------------------------------------*/
+/* line 241, ../sass/screen.scss */
+.news {
+  background: #edeff1;
+  overflow: hidden;
+  padding: 70px 0 30px;
+}
+/* line 246, ../sass/screen.scss */
+.news .news-title {
+  padding: 40px 0 60px;
+  color: #31353e;
+  font: 700 30px/24px "Roboto Slab", serif;
+  text-align: center;
+}
+/* line 252, ../sass/screen.scss */
+.news .news-list {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+}
+/* line 257, ../sass/screen.scss */
+.news .news-list li {
+  display: inline-block;
+  width: 280px;
+  margin: 0 20px;
+  padding-top: 30px;
+  text-align: center;
+}
+/* line 264, ../sass/screen.scss */
+.news .news-list li:first-child {
+  padding-top: 0;
+}
+/* line 268, ../sass/screen.scss */
+.news .news-list li img {
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* line 277, ../sass/screen.scss */
+.news .news-list li .list-item {
+  padding: 15px;
+  color: #31353e;
+  font: 700 24px/30px "Roboto Slab", serif;
+}
+/* line 282, ../sass/screen.scss */
+.news .news-list li .item-exposition {
+  font: 300 15px/30px "Roboto", sans-serif;
+}
+/* line 285, ../sass/screen.scss */
+.news .news-list li .news-link {
+  display: block;
+  width: 179px;
+  height: 55px;
+  margin: 30px auto 0;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
+  color: #4e5159;
+  font: 300 15px/55px "Roboto", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+}
+/* line 301, ../sass/screen.scss */
+.news .news-list li .news-link:hover {
+  background: #4e5159;
+  color: #fff;
+}
+
+/*---------------------------------------------end news---------------------------------------------*/
+/*---------------------------------------------news-latter---------------------------------------------*/
+/* line 311, ../sass/screen.scss */
+.news-latter {
+  padding: 70px 0 30px;
+  background: url("../images/newslater.png") top center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+/* line 317, ../sass/screen.scss */
+.news-latter .latter-title {
+  padding-top: 40px;
+  color: #fff;
+  font: 700 30px/48px "Roboto Slab", serif;
+  text-align: center;
+}
+/* line 323, ../sass/screen.scss */
+.news-latter .latter-description {
+  color: #fff;
+  font: 300 15px/24px "Roboto Slab", serif;
+  text-align: center;
+}
+/* line 328, ../sass/screen.scss */
+.news-latter .lattrer-form {
+  display: block;
+  margin: 20px auto 0;
+  text-align: center;
+}
+/* line 333, ../sass/screen.scss */
+.news-latter .lattrer-form .latter-email {
+  float: left;
+  width: 180px;
+  height: 40px;
+  margin-left: 35px;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
+  /* ╨┤╨╗╤П ╨▓╤Б╨╡╤Е */
+  /* ╤В╨╛╨╗╤М╨║╨╛ ╨┤╨╗╤П webkit */
+  /* ╤В╨╛╨╗╤М╨║╨╛ ╨┤╨╗╤П mozilla */
+}
+/* line 343, ../sass/screen.scss */
+.news-latter .lattrer-form .latter-email ::-webkit-input-placeholder {
+  color: #f3f4f6;
+  font: 400 18px/30px "Roboto Slab", serif;
+}
+/* line 347, ../sass/screen.scss */
+.news-latter .lattrer-form .latter-email :-moz-placeholder {
+  color: #f3f4f6;
+  font: 400 18px/30px "Roboto Slab", serif;
+}
+/* line 351, ../sass/screen.scss */
+.news-latter .lattrer-form .latter-email :-ms-input-placeholder {
+  color: #f3f4f6;
+  font: 400 18px/30px "Roboto Slab", serif;
+}
+/* line 356, ../sass/screen.scss */
+.news-latter .lattrer-form .latter-email ::-webkit-input-placeholder {
+  color: #f3f4f6;
+  font: 400 18px/30px "Roboto Slab", serif;
+}
+/* line 361, ../sass/screen.scss */
+.news-latter .lattrer-form .latter-email :-moz-placeholder {
+  color: #f3f4f6;
+  font: 400 18px/30px "Roboto Slab", serif;
+}
+/* line 366, ../sass/screen.scss */
+.news-latter .lattrer-form .latter-submit {
+  float: left;
+  width: 110px;
+  height: 45px;
+  margin-left: -40px;
+  border: none;
+  border-radius: 27px;
+  color: #612316;
+  background: #fff;
+  cursor: pointer;
+}
+
+/*---------------------------------------------end news-latter---------------------------------------------*/
+/*------------------------------------------------product---------------------------------------------*/
+/* line 381, ../sass/screen.scss */
+.product {
+  padding: 70px 0 40px;
+  background: #fff;
+}
+/* line 385, ../sass/screen.scss */
+.product .product-list {
+  text-align: center;
+}
+/* line 387, ../sass/screen.scss */
+.product .product-list li {
+  display: inline-block;
+  width: 280px;
+  margin: 0 auto;
+  text-align: left;
+}
+/* line 393, ../sass/screen.scss */
+.product .product-list li .product-title {
+  padding-bottom: 10px;
+  color: #191b29;
+  font: 700 30px/48px "Roboto Slab", serif;
+}
+/* line 398, ../sass/screen.scss */
+.product .product-list li .first-description,
+.product .product-list li .second-description {
+  color: #191b29;
+  font: 300 16px/30px "Roboto", sans-serif;
+}
+/* line 403, ../sass/screen.scss */
+.product .product-list li .second-description {
+  padding-top: 30px;
+}
+/* line 407, ../sass/screen.scss */
+.product .product-list li .first-link,
+.product .product-list li .second-link {
+  display: block;
+  width: 213px;
+  height: 55px;
+  margin: 20px auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
+  color: #fff;
+  font: 400 18px/55px "Roboto Slab", serif;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+}
+/* line 423, ../sass/screen.scss */
+.product .product-list li .first-link {
+  border: 1px solid #dd4b2b;
+  background-color: #dd4b2b;
+}
+/* line 426, ../sass/screen.scss */
+.product .product-list li .first-link:hover {
+  color: #dd4b2b;
+  background: #fff;
+}
+/* line 431, ../sass/screen.scss */
+.product .product-list li .second-link {
+  border: 1px solid #4b4e73;
+  background-color: #4b4e73;
+}
+/* line 434, ../sass/screen.scss */
+.product .product-list li .second-link:hover {
+  color: #4b4e73;
+  background: #fff;
+}
+
+/*---------------------------------------------end product---------------------------------------------*/
+/*---------------------------------------------pre-footer---------------------------------------------*/
+/* line 444, ../sass/screen.scss */
+.pre-footer {
+  padding-top: 70px;
+  background: #d75d0e;
+  overflow: hidden;
+}
+/* line 449, ../sass/screen.scss */
+.pre-footer .list-article {
+  padding-top: 40px;
+}
+/* line 452, ../sass/screen.scss */
+.pre-footer .list-article li {
+  display: inline-block;
+  width: 280px;
+  margin: 20px;
+}
+/* line 457, ../sass/screen.scss */
+.pre-footer .list-article li a {
+  display: block;
+  color: #fff;
+  font: 400 18px/36px "Roboto", sans-serif;
+  text-decoration: none;
+}
+/* line 463, ../sass/screen.scss */
+.pre-footer .list-article li a:hover {
+  text-decoration: underline;
+}
+
+/*---------------------------------------------end pre-footer---------------------------------------------*/
+/*---------------------------------------------footer---------------------------------------------*/
+/* line 472, ../sass/screen.scss */
+footer {
+  background: url("../images/newslater.png") top center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+/* line 477, ../sass/screen.scss */
+footer .footer-description {
+  padding: 90px 0 245px;
+  color: #fff;
+  font: 300 18px/24px "Proxima Nova", sans-serif;
+  text-align: center;
+}
+/* line 483, ../sass/screen.scss */
+footer .footer-description span {
+  display: block;
+}
+/* line 487, ../sass/screen.scss */
+footer .footer-description .footer-link {
+  color: #fff;
+  font: 700 18px/24px "Proxima Nova", sans-serif;
+  text-decoration: none;
+}
+/* line 492, ../sass/screen.scss */
+footer .footer-description .footer-link:hover {
+  text-decoration: underline;
+}
+
+/*---------------------------------------------end footer---------------------------------------------*/
+/*--------------------------------------------- MEDIA Quares ---------------------------------------------*/
+@media (min-width: 480px) {
+  /*--------------hero-----------------*/
+  /* line 504, ../sass/screen.scss */
+  .hero .hero-title {
+    font-size: 52px;
+  }
+
+  /*-------------------news----------------------*/
+  /* line 513, ../sass/screen.scss */
+  .news .news-list li {
+    width: 280px;
+  }
+
+  /*------------------------news-latter-----------*/
+  /* line 524, ../sass/screen.scss */
+  .news-latter .lattrer-form .latter-email {
+    width: 240px;
+    margin-left: 55px;
+  }
+  /* line 528, ../sass/screen.scss */
+  .news-latter .lattrer-form .latter-submit {
+    width: 140px;
+  }
+
+  /*---------------------------------------------pre-footer---------------------------------------------*/
+  /* line 535, ../sass/screen.scss */
+  .pre-footer .list-article {
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 538, ../sass/screen.scss */
+  .pre-footer .list-article li {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  /*--------------hero-----------------*/
+  /* line 547, ../sass/screen.scss */
+  .hero .hero-title {
+    font-size: 52px;
+  }
+  /* line 551, ../sass/screen.scss */
+  .hero .hero-articless {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 554, ../sass/screen.scss */
+  .hero .hero-articless li {
+    display: inline-block;
+    width: 33.33333%;
+    padding-top: 0;
+    text-align: center;
+  }
+  /* line 560, ../sass/screen.scss */
+  .hero .hero-articless li .articles-item {
+    padding: 20px 0;
+    color: #fff;
+    font: 700 30px/24px "Roboto Slab", serif;
+  }
+  /* line 566, ../sass/screen.scss */
+  .hero .hero-articless li .item-description {
+    color: #fff;
+    font: 300 15px/30px "Roboto Slab", serif;
+    text-align: center;
+  }
+
+  /*---------------------------------------------news-latter---------------------------------------------*/
+  /* line 577, ../sass/screen.scss */
+  .news-latter .latter-description {
+    width: 535px;
+    margin: 0 auto;
+  }
+  /* line 583, ../sass/screen.scss */
+  .news-latter .lattrer-form .latter-email {
+    width: 300px;
+    margin-left: 150px;
+  }
+  /* line 587, ../sass/screen.scss */
+  .news-latter .lattrer-form .latter-submit {
+    width: 170px;
+  }
+
+  /*------------------------------------------------product---------------------------------------------*/
+  /* line 597, ../sass/screen.scss */
+  .product .product-list li {
+    display: inline-block;
+    width: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 20px;
+    text-align: left;
+    overflow: hidden;
+  }
+  /* line 606, ../sass/screen.scss */
+  .product .product-list li .first-item {
+    float: right;
+    width: 420px;
+    height: auto;
+  }
+  /* line 611, ../sass/screen.scss */
+  .product .product-list li .second-item {
+    float: left;
+    width: 420px;
+    height: auto;
+    margin-right: 20px;
+  }
+  /* line 618, ../sass/screen.scss */
+  .product .product-list li .product-title {
+    padding-bottom: 10px;
+    color: #191b29;
+    font: 700 30px/48px "Roboto Slab", serif;
+  }
+  /* line 623, ../sass/screen.scss */
+  .product .product-list li .first-description,
+  .product .product-list li .second-description {
+    color: #191b29;
+    font: 300 16px/30px "Roboto", sans-serif;
+  }
+  /* line 628, ../sass/screen.scss */
+  .product .product-list li .second-description {
+    padding-top: 30px;
+  }
+  /* line 632, ../sass/screen.scss */
+  .product .product-list li .first-link,
+  .product .product-list li .second-link {
+    width: 213px;
+  }
+  /* line 637, ../sass/screen.scss */
+  .product .product-list li .second-link {
+    margin-left: 440px;
+  }
+
+  /*---------------------------------------------pre-footer---------------------------------------------*/
+  /* line 645, ../sass/screen.scss */
+  .pre-footer .list-article {
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 652, ../sass/screen.scss */
+  .pre-footer .list-article li {
+    width: 140px;
+  }
+}
+@media (min-width: 1024px) {
+  /*--------------hero-----------------*/
+  /* line 661, ../sass/screen.scss */
+  .hero .hero-title {
+    font-size: 72px;
+  }
+  /* line 665, ../sass/screen.scss */
+  .hero .hero-articless {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 668, ../sass/screen.scss */
+  .hero .hero-articless li {
+    display: inline-block;
+    width: 280px;
+    padding: 0;
+  }
+  /* line 673, ../sass/screen.scss */
+  .hero .hero-articless li img {
+    width: 148px;
+    height: 148px;
+  }
+
+  /*---------------------------------------------news---------------------------------------------*/
+  /* line 684, ../sass/screen.scss */
+  .news .news-list li {
+    width: 370px;
+    margin: 0 45px;
+  }
+  /* line 688, ../sass/screen.scss */
+  .news .news-list li img {
+    width: 370px;
+    height: auto;
+  }
+
+  /*---------------------------------------------news-latter---------------------------------------------*/
+  /* line 700, ../sass/screen.scss */
+  .news-latter .lattrer-form .latter-email {
+    width: 350px;
+    margin-left: 253px;
+  }
+  /* line 704, ../sass/screen.scss */
+  .news-latter .lattrer-form .latter-submit {
+    width: 170px;
+  }
+
+  /*------------------------------------------------product---------------------------------------------*/
+  /* line 715, ../sass/screen.scss */
+  .product .product-list li .first-item {
+    width: 590px;
+    height: auto;
+  }
+  /* line 719, ../sass/screen.scss */
+  .product .product-list li .second-item {
+    width: 590px;
+    height: auto;
+  }
+  /* line 724, ../sass/screen.scss */
+  .product .product-list li .first-link,
+  .product .product-list li .second-link {
+    width: 213px;
+  }
+  /* line 728, ../sass/screen.scss */
+  .product .product-list li .first-link {
+    margin-left: 0;
+  }
+  /* line 731, ../sass/screen.scss */
+  .product .product-list li .second-link {
+    margin-left: 610px;
+  }
+
+  /*---------------------------------------------pre-footer---------------------------------------------*/
+  /* line 739, ../sass/screen.scss */
+  .pre-footer .list-article {
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 743, ../sass/screen.scss */
+  .pre-footer .list-article li {
+    width: 280px;
+  }
+}
+@media (min-width: 1200px) {
+  /*--------------hero-----------------*/
+  /* line 752, ../sass/screen.scss */
+  .hero .hero-title {
+    font-size: 72px;
+  }
+  /* line 756, ../sass/screen.scss */
+  .hero .hero-articless {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 759, ../sass/screen.scss */
+  .hero .hero-articless li {
+    display: inline-block;
+    width: 305px;
+    padding: 0;
+  }
+  /* line 764, ../sass/screen.scss */
+  .hero .hero-articless li img {
+    width: 148px;
+    height: 148px;
+  }
+
+  /*---------------------------------------------news---------------------------------------------*/
+  /* line 774, ../sass/screen.scss */
+  .news .news-list {
+    text-align: left;
+  }
+  /* line 776, ../sass/screen.scss */
+  .news .news-list li {
+    width: 305px;
+  }
+
+  /*---------------------------------------------pre-footer---------------------------------------------*/
+  /* line 783, ../sass/screen.scss */
+  .pre-footer .list-article {
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 787, ../sass/screen.scss */
+  .pre-footer .list-article li {
+    width: 305px;
+  }
+
+  /*---------------------------------------------news-latter---------------------------------------------*/
+  /* line 797, ../sass/screen.scss */
+  .news-latter .lattrer-form .latter-email {
+    margin-left: 365px;
+  }
+}
