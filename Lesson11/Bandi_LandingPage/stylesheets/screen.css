@@ -1,0 +1,1571 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/screen.scss */
+.wrapper {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+/* line 12, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.7/sass/susy/output/support/_clearfix.scss */
+.wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 15, ../sass/screen.scss */
+body {
+  font-family: 'OpenSans', sans-serif;
+  color: #062033;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* line 21, ../sass/screen.scss */
+a:link, a:visited {
+  text-decoration: none;
+}
+
+/* line 24, ../sass/screen.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 28, ../sass/screen.scss */
+section, footer {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+/*------------------------------------------navigation----------------------------------*/
+/* line 71, ../sass/screen.scss */
+.header-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.7/sass/susy/output/support/_clearfix.scss */
+.header-wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 76, ../sass/screen.scss */
+header {
+  z-index: 999999999;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: rgba(106, 115, 123, 0.2);
+  color: #fff;
+}
+/* line 85, ../sass/screen.scss */
+header h1 {
+  float: left;
+  max-width: 250px;
+  overflow: hidden;
+}
+/* line 90, ../sass/screen.scss */
+header .logo {
+  margin-left: 15px;
+  color: #fff;
+  font: 28px 'Pacifico', cursive;
+}
+/* line 94, ../sass/screen.scss */
+header .logo .logo-description {
+  padding-left: 15px;
+  font-weight: 300;
+  color: #fff;
+  font: 13px 'OpenSans', sans-serif;
+}
+/* line 99, ../sass/screen.scss */
+header .logo .logo-description:before {
+  content: '|';
+  padding-right: 15px;
+  opacity: 0.3;
+  font-weight: 300;
+  color: #32b0ee;
+  font-size: 16px;
+}
+
+/* line 111, ../sass/screen.scss */
+#nav {
+  position: absolute;
+  right: 0;
+}
+/* line 115, ../sass/screen.scss */
+#nav ul li {
+  float: left;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+}
+/* line 120, ../sass/screen.scss */
+#nav ul li a {
+  display: block;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+}
+/* line 130, ../sass/screen.scss */
+#nav ul li a:hover {
+  color: #edeff1;
+  border-top: 2px solid #32b0ee;
+}
+
+@media (max-width: 768px) {
+  /* line 141, ../sass/screen.scss */
+  header .header-wrapper {
+    width: 100%;
+  }
+  /* line 142, ../sass/screen.scss */
+  header h1 {
+    max-width: 250px;
+    left: 3%;
+  }
+
+  /* line 147, ../sass/screen.scss */
+  #nav {
+    width: 100%;
+    top: 60px;
+  }
+  /* line 150, ../sass/screen.scss */
+  #nav:before {
+    content: '\2630';
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: -50px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  /* line 162, ../sass/screen.scss */
+  #nav ul {
+    background-color: rgba(106, 115, 123, 0.2);
+    width: 100%;
+  }
+  /* line 165, ../sass/screen.scss */
+  #nav ul li {
+    float: none;
+  }
+  /* line 167, ../sass/screen.scss */
+  #nav ul li a {
+    padding: 10px 3%;
+    font-size: 13px;
+    line-height: 20px;
+    border-top: 1px solid #337ab7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  /* line 175, ../sass/screen.scss */
+  #nav ul li a:hover {
+    background-color: #0eb493;
+  }
+
+  /* line 183, ../sass/screen.scss */
+  #nav ul {
+    transition: 350ms;
+    -moz-transition: 350ms;
+    -webkit-transition: 350ms;
+    transform: perspective(600) rotate3d(0, 0, 0, 0);
+    -moz-transform: perspective(600) rotate3d(0, 0, 0, 0);
+    -webkit-transform: perspective(600) rotate3d(1, 0, 0, -90deg);
+    transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -webkit-transform-origin: 50% 0;
+  }
+
+  /* line 194, ../sass/screen.scss */
+  #nav.open ul {
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
+  }
+}
+/*------------------------------------------end navigation----------------------------------*/
+/*------------------------------------------hero----------------------------------*/
+/* line 202, ../sass/screen.scss */
+.hero {
+  min-height: 100vh;
+  padding-top: 0;
+}
+
+/*-------------------------------------slider---------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 208, ../sass/screen.scss */
+.hero-slider {
+  position: relative;
+  height: 390px;
+}
+
+/* line 213, ../sass/screen.scss */
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #483f2b;
+}
+/* line 220, ../sass/screen.scss */
+.slider .slide {
+  position: absolute;
+  float: left;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  text-align: center;
+}
+/* line 229, ../sass/screen.scss */
+.slider .slide .hero-introduce {
+  padding-top: 40px;
+}
+/* line 231, ../sass/screen.scss */
+.slider .slide .hero-introduce .meet {
+  display: block;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 62px;
+  font-weight: 300;
+}
+/* line 237, ../sass/screen.scss */
+.slider .slide .hero-introduce .meet .brandi {
+  color: #fff;
+  font-size: 62px;
+  font-weight: 700;
+}
+/* line 243, ../sass/screen.scss */
+.slider .slide .hero-introduce .creative {
+  font-size: 24px;
+  font-weight: 300;
+  color: #0feb9e;
+}
+/* line 248, ../sass/screen.scss */
+.slider .slide .hero-introduce .templates {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+/* line 254, ../sass/screen.scss */
+.slider .slide .hero-title {
+  position: relative;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 261, ../sass/screen.scss */
+.slider .slide .hero-title:before {
+  display: inline-block;
+  margin: 0 10px 6px 20px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #0feb9e;
+  width: 28px;
+}
+/* line 270, ../sass/screen.scss */
+.slider .slide .hero-title:after {
+  display: inline-block;
+  margin: 0px 20px 6px 10px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #0feb9e;
+  width: 28px;
+}
+/* line 281, ../sass/screen.scss */
+.slider .slide .hero-social {
+  position: absolute;
+  left: 30%;
+  bottom: 25%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 287, ../sass/screen.scss */
+.slider .slide .hero-social li {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 290, ../sass/screen.scss */
+.slider .slide .hero-social li a {
+  opacity: 0.3;
+  color: #fff;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+/* line 296, ../sass/screen.scss */
+.slider .slide .hero-social li a:hover {
+  opacity: 1;
+  color: #fff;
+}
+/* line 304, ../sass/screen.scss */
+.slider .slide-1 {
+  background: url("../img/hero-bg-1.jpg") center;
+  background-size: cover;
+}
+/* line 308, ../sass/screen.scss */
+.slider .slide-2 {
+  background: url("../img/hero-bg-2.png") center;
+  background-size: cover;
+}
+
+/* line 314, ../sass/screen.scss */
+#slideposition {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+/* line 321, ../sass/screen.scss */
+#slideposition li {
+  margin: 5px 0;
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: ease-in-out;
+}
+/* line 331, ../sass/screen.scss */
+#slideposition li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 334, ../sass/screen.scss */
+#slideposition li.active {
+  background-color: #fff;
+}
+
+/*------------------------------------------end hero----------------------------------*/
+/*------------------------------------------features----------------------------------*/
+/* line 341, ../sass/screen.scss */
+.features {
+  background: #f4f7f9;
+}
+/* line 343, ../sass/screen.scss */
+.features .section-title {
+  margin-bottom: 15px;
+  color: #0eb493;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 346, ../sass/screen.scss */
+.features .content-heart {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  text-align: center;
+}
+/* line 48, ../sass/screen.scss */
+.features .content-heart:before {
+  display: inline-block;
+  margin: 0 10px 6px 20px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #e7e8ea;
+  width: 90px;
+}
+/* line 57, ../sass/screen.scss */
+.features .content-heart:after {
+  display: inline-block;
+  margin: 0px 20px 6px 10px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #e7e8ea;
+  width: 90px;
+}
+/* line 66, ../sass/screen.scss */
+.features .content-heart .fa {
+  color: #cdcdcd;
+}
+/* line 350, ../sass/screen.scss */
+.features .features-list {
+  margin: 40px auto 0;
+  text-align: center;
+}
+/* line 354, ../sass/screen.scss */
+.features .features-list li {
+  width: 250px;
+  margin: 30px auto 0;
+  padding: 0 5px;
+  text-align: center;
+}
+/* line 360, ../sass/screen.scss */
+.features .features-list li .fa {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px;
+  border: 1px solid #0eb493;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 40px;
+  color: #0eb493;
+}
+/* line 371, ../sass/screen.scss */
+.features .features-list li .list-title {
+  padding-bottom: 10px;
+  color: #062033;
+  font-size: 20px;
+  font-weight: 00;
+}
+/* line 377, ../sass/screen.scss */
+.features .features-list li .list-description {
+  opacity: 0.7;
+  color: #062033;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/*------------------------------------------end features----------------------------------*/
+/*------------------------------------------works----------------------------------*/
+/* line 389, ../sass/screen.scss */
+.works {
+  width: 100%;
+  background: #fff;
+}
+/* line 393, ../sass/screen.scss */
+.works .section-title {
+  margin-bottom: 15px;
+  color: #0eb493;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 396, ../sass/screen.scss */
+.works .content-heart {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  text-align: center;
+}
+/* line 48, ../sass/screen.scss */
+.works .content-heart:before {
+  display: inline-block;
+  margin: 0 10px 6px 20px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #e7e8ea;
+  width: 90px;
+}
+/* line 57, ../sass/screen.scss */
+.works .content-heart:after {
+  display: inline-block;
+  margin: 0px 20px 6px 10px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #e7e8ea;
+  width: 90px;
+}
+/* line 66, ../sass/screen.scss */
+.works .content-heart .fa {
+  color: #cdcdcd;
+}
+/* line 399, ../sass/screen.scss */
+.works .works-description {
+  margin: 20px 0;
+  opacity: 0.8;
+  color: #062033;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+/* line 407, ../sass/screen.scss */
+.works .portfolio-menu {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 410, ../sass/screen.scss */
+.works .portfolio-menu li {
+  display: inline-block;
+  margin: 5px;
+}
+/* line 413, ../sass/screen.scss */
+.works .portfolio-menu li a {
+  display: block;
+  width: inherit;
+  height: 30px;
+  padding: 0 5px;
+  text-align: center;
+  color: #062033;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  border-radius: 6px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+/* line 427, ../sass/screen.scss */
+.works .portfolio-menu li a:hover {
+  color: #fff;
+  background-color: #0eb493;
+}
+/* line 434, ../sass/screen.scss */
+.works .portfolio-list {
+  width: inherit;
+  text-align: center;
+}
+/* line 437, ../sass/screen.scss */
+.works .portfolio-list .item {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+/* line 441, ../sass/screen.scss */
+.works .portfolio-list .item img {
+  min-width: 100%;
+  height: auto;
+}
+/* line 446, ../sass/screen.scss */
+.works .portfolio-list .hover-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background-color: rgba(14, 180, 147, 0.9);
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+/* line 460, ../sass/screen.scss */
+.works .portfolio-list .hover-effect:hover {
+  opacity: 1;
+}
+/* line 463, ../sass/screen.scss */
+.works .portfolio-list .hover-effect:before {
+  bottom: 0;
+  left: 0;
+}
+/* line 467, ../sass/screen.scss */
+.works .portfolio-list .hover-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* line 475, ../sass/screen.scss */
+.works .portfolio-list .hover-content .font {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* line 487, ../sass/screen.scss */
+.works .portfolio-list .hover-content .fa {
+  display: block;
+  width: inherit;
+  height: inherit;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+/* line 500, ../sass/screen.scss */
+.works .portfolio-list .hover-content .fa:hover {
+  color: #22b698;
+  background: #fff;
+}
+/* line 505, ../sass/screen.scss */
+.works .portfolio-list .hover-content h3 {
+  margin-top: 20px;
+  color: white;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* line 512, ../sass/screen.scss */
+.works .portfolio-list .hover-content a {
+  color: white;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*------------------------------------------end works----------------------------------*/
+/*------------------------------------------team----------------------------------*/
+/* line 524, ../sass/screen.scss */
+.team {
+  background: #fff;
+}
+/* line 526, ../sass/screen.scss */
+.team .section-title {
+  margin-bottom: 15px;
+  color: #0eb493;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 529, ../sass/screen.scss */
+.team .content-heart {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  text-align: center;
+}
+/* line 48, ../sass/screen.scss */
+.team .content-heart:before {
+  display: inline-block;
+  margin: 0 10px 6px 20px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #e7e8ea;
+  width: 90px;
+}
+/* line 57, ../sass/screen.scss */
+.team .content-heart:after {
+  display: inline-block;
+  margin: 0px 20px 6px 10px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #e7e8ea;
+  width: 90px;
+}
+/* line 66, ../sass/screen.scss */
+.team .content-heart .fa {
+  color: #cdcdcd;
+}
+/* line 532, ../sass/screen.scss */
+.team .team-description {
+  margin: 20px 0 40px;
+  opacity: 0.8;
+  color: #062033;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+/* line 540, ../sass/screen.scss */
+.team .team-item {
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 543, ../sass/screen.scss */
+.team .team-item li {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 547, ../sass/screen.scss */
+.team .team-item li .item {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+/* line 552, ../sass/screen.scss */
+.team .team-item li .hover-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background-color: rgba(14, 180, 147, 0.9);
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+/* line 566, ../sass/screen.scss */
+.team .team-item li .hover-effect.item-sign h3 {
+  color: #0eb493;
+}
+/* line 571, ../sass/screen.scss */
+.team .team-item li .hover-effect:hover {
+  opacity: 1;
+}
+/* line 574, ../sass/screen.scss */
+.team .team-item li .hover-effect:before {
+  bottom: 0;
+  left: 0;
+}
+/* line 577, ../sass/screen.scss */
+.team .team-item li .hover-effect .hover-content {
+  width: 221px;
+  margin: 23px auto 23px;
+}
+/* line 580, ../sass/screen.scss */
+.team .team-item li .hover-effect .hover-content h3 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+}
+/* line 587, ../sass/screen.scss */
+.team .team-item li .hover-effect .hover-content p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* line 595, ../sass/screen.scss */
+.team .team-item li .hover-effect .hover-content .team-social li a {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+/* line 603, ../sass/screen.scss */
+.team .team-item li .hover-effect .hover-content .team-social li a:hover {
+  background: #fff;
+}
+/* line 605, ../sass/screen.scss */
+.team .team-item li .hover-effect .hover-content .team-social li a:hover .fa {
+  color: #0eb493;
+}
+/* line 610, ../sass/screen.scss */
+.team .team-item li .hover-effect .hover-content .team-social li .fa {
+  font-size: 24px;
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+/* line 624, ../sass/screen.scss */
+.team .team-item li .item-sign h3 {
+  margin: 10px 0;
+  color: #062033;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+/* line 631, ../sass/screen.scss */
+.team .team-item li .item-sign span {
+  opacity: 0.56;
+  color: #062033;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/*------------------------------------------end team----------------------------------*/
+/*------------------------------------------sum-fun-fucts----------------------------------*/
+/* line 644, ../sass/screen.scss */
+.sum-fun-fucts {
+  min-height: 1500px;
+  background: url("../img/fut-1.jpg") center no-repeat;
+  background-size: cover;
+}
+/* line 648, ../sass/screen.scss */
+.sum-fun-fucts .section-title {
+  margin-bottom: 15px;
+  color: #0eb493;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 651, ../sass/screen.scss */
+.sum-fun-fucts .content-heart {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  text-align: center;
+}
+/* line 48, ../sass/screen.scss */
+.sum-fun-fucts .content-heart:before {
+  display: inline-block;
+  margin: 0 10px 6px 20px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #e7e8ea;
+  width: 90px;
+}
+/* line 57, ../sass/screen.scss */
+.sum-fun-fucts .content-heart:after {
+  display: inline-block;
+  margin: 0px 20px 6px 10px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #e7e8ea;
+  width: 90px;
+}
+/* line 66, ../sass/screen.scss */
+.sum-fun-fucts .content-heart .fa {
+  color: #cdcdcd;
+}
+/* line 654, ../sass/screen.scss */
+.sum-fun-fucts .fucts-item {
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 658, ../sass/screen.scss */
+.sum-fun-fucts .fucts-item li {
+  display: inline-block;
+  width: 290px;
+  margin: 40px auto;
+  text-align: center;
+  color: #fff;
+}
+/* line 665, ../sass/screen.scss */
+.sum-fun-fucts .fucts-item li .fa {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 40px;
+  line-height: 130px;
+  text-align: center;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 100%;
+}
+/* line 676, ../sass/screen.scss */
+.sum-fun-fucts .fucts-item li .fa .fa-clock-o,
+.sum-fun-fucts .fucts-item li .fa .fun-number,
+.sum-fun-fucts .fucts-item li .fa .fun-descr {
+  font-weight: normal;
+  color: #fff;
+  line-height: 38px;
+  text-align: center;
+}
+/* line 685, ../sass/screen.scss */
+.sum-fun-fucts .fucts-item li .number {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+}
+/* line 692, ../sass/screen.scss */
+.sum-fun-fucts .fucts-item li .descriptions {
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*------------------------------------------end sum-fun-fucts----------------------------------*/
+/*------------------------------------------discuss----------------------------------*/
+/* line 705, ../sass/screen.scss */
+.discuss {
+  background: #fff;
+}
+/* line 708, ../sass/screen.scss */
+.discuss .section-title {
+  margin-bottom: 15px;
+  color: #0eb493;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 711, ../sass/screen.scss */
+.discuss .content-heart {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  text-align: center;
+}
+/* line 48, ../sass/screen.scss */
+.discuss .content-heart:before {
+  display: inline-block;
+  margin: 0 10px 6px 20px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #e7e8ea;
+  width: 90px;
+}
+/* line 57, ../sass/screen.scss */
+.discuss .content-heart:after {
+  display: inline-block;
+  margin: 0px 20px 6px 10px;
+  height: 1px;
+  content: " ";
+  text-shadow: none;
+  background-color: #e7e8ea;
+  width: 90px;
+}
+/* line 66, ../sass/screen.scss */
+.discuss .content-heart .fa {
+  color: #cdcdcd;
+}
+/* line 714, ../sass/screen.scss */
+.discuss .discuss-descr {
+  margin: 20px auto;
+  opacity: 0.8;
+  color: #062033;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+/* line 724, ../sass/screen.scss */
+.discuss .contact-address .address {
+  margin-bottom: 40px;
+}
+/* line 726, ../sass/screen.scss */
+.discuss .contact-address .address li {
+  font-weight: 400;
+  color: #6a737b;
+  font-size: 13px;
+  line-height: 24px;
+}
+/* line 732, ../sass/screen.scss */
+.discuss .contact-address .address li h3 {
+  margin-bottom: 40px;
+  font-weight: 400;
+  color: #062033;
+  font-size: 22px;
+  line-height: 32px;
+}
+/* line 740, ../sass/screen.scss */
+.discuss .contact-address .address li a {
+  font-weight: 400;
+  color: #6a737b;
+  font-size: 13px;
+  line-height: 24px;
+}
+/* line 752, ../sass/screen.scss */
+.discuss .contact h3 {
+  margin-bottom: 40px;
+  color: #062033;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+/* line 760, ../sass/screen.scss */
+.discuss .contact .contact-form .contact-name,
+.discuss .contact .contact-form .contact-email,
+.discuss .contact .contact-form .contact-message {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px 12px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+/* line 773, ../sass/screen.scss */
+.discuss .contact .contact-form .contact-name:focus,
+.discuss .contact .contact-form .contact-email:focus,
+.discuss .contact .contact-form .contact-message:focus {
+  border-color: #66afe9;
+  webkit-box-bottom-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-bottom-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+/* line 779, ../sass/screen.scss */
+.discuss .contact .contact-form label {
+  float: right;
+  width: 100%;
+  text-align: right;
+  color: #0eb493;
+}
+/* line 785, ../sass/screen.scss */
+.discuss .contact .contact-form .submit-button {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+/* line 795, ../sass/screen.scss */
+.discuss .contact-link {
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+}
+/* line 800, ../sass/screen.scss */
+.discuss .contact-link li {
+  display: inline-block;
+  margin-left: 20px;
+  opacity: 0.2;
+  color: #062033;
+}
+/* line 805, ../sass/screen.scss */
+.discuss .contact-link li:first-child {
+  margin-left: 0;
+}
+/* line 808, ../sass/screen.scss */
+.discuss .contact-link li .fa {
+  font-size: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+/* line 813, ../sass/screen.scss */
+.discuss .contact-link li .fa:hover {
+  opacity: none;
+  color: #0eb493;
+}
+
+/*------------------------------------------end discuss----------------------------------*/
+/*------------------------------------------map-----------------------------------*/
+/* line 823, ../sass/screen.scss */
+.map {
+  position: relative;
+  min-height: 215px;
+  background: url("../img/map.png") top center no-repeat;
+  background-size: cover;
+  border-bottom: 5px solid #062033;
+}
+/* line 830, ../sass/screen.scss */
+.map .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 60px;
+  color: #0eb493;
+}
+
+/*------------------------------------------end map----------------------------------*/
+/*------------------------------------------footer----------------------------------*/
+/* line 840, ../sass/screen.scss */
+footer {
+  background-color: #21b697;
+}
+/* line 845, ../sass/screen.scss */
+footer .footer-info .footer-logo a {
+  color: #fff;
+  font: 28px 'Pacifico', cursive;
+}
+/* line 849, ../sass/screen.scss */
+footer .footer-info .footer-logo p {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* line 856, ../sass/screen.scss */
+footer .footer-info .footer-form {
+  padding-bottom: 15px;
+}
+/* line 859, ../sass/screen.scss */
+footer .footer-info .footer-form h4 {
+  margin: 20px 0 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+/* line 866, ../sass/screen.scss */
+footer .footer-info .footer-form .fotter-contact {
+  position: relative;
+}
+/* line 869, ../sass/screen.scss */
+footer .footer-info .footer-form .fotter-contact .textfield {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  text-indent: 10px;
+  color: #fff;
+  font-size: 30px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  background-color: transparent;
+}
+/* line 880, ../sass/screen.scss */
+footer .footer-info .footer-form .fotter-contact .form-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 24px;
+  color: #fff;
+  border: 0 none;
+  background-color: transparent;
+}
+/* line 890, ../sass/screen.scss */
+footer .footer-info .footer-form p {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* line 897, ../sass/screen.scss */
+footer .footer-info .link-first,
+footer .footer-info .link-second {
+  margin: 20px 0;
+}
+/* line 901, ../sass/screen.scss */
+footer .footer-info .link-first h4,
+footer .footer-info .link-second h4 {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+/* line 908, ../sass/screen.scss */
+footer .footer-info .link-first a,
+footer .footer-info .link-second a {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 32px;
+}
+/* line 914, ../sass/screen.scss */
+footer .footer-info .link-first a:hover,
+footer .footer-info .link-second a:hover {
+  text-decoration: underline;
+}
+/* line 920, ../sass/screen.scss */
+footer .footer-info .authors-create .authors-heart {
+  position: relative;
+  display: block;
+  width: 212px;
+  margin-bottom: 40px;
+  padding-left: 12px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  border-left: 1px solid #062033;
+}
+/* line 931, ../sass/screen.scss */
+footer .footer-info .authors-create .authors-heart .fa {
+  font-size: 16px;
+  color: #167562;
+  font-weight: 600;
+}
+/* line 937, ../sass/screen.scss */
+footer .footer-info .authors-create .authors-heart a {
+  color: #062033;
+}
+/* line 939, ../sass/screen.scss */
+footer .footer-info .authors-create .authors-heart a:hover {
+  text-decoration: underline;
+}
+/* line 944, ../sass/screen.scss */
+footer .footer-info .authors-create .copyright {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #062033;
+}
+/* line 950, ../sass/screen.scss */
+footer .footer-info .authors-create .copyright a {
+  color: #062033;
+}
+/* line 952, ../sass/screen.scss */
+footer .footer-info .authors-create .copyright a:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------------------end footer----------------------------------*/
+/*------------------------------------------media queries----------------------------------*/
+@media (min-width: 480px) {
+  /*------------------------------------------hero----------------------------------*/
+  /* line 970, ../sass/screen.scss */
+  .slider .slide .hero-introduce {
+    padding-top: 200px;
+  }
+  /* line 973, ../sass/screen.scss */
+  .slider .slide .hero-title {
+    font-size: 18px;
+  }
+  /* line 976, ../sass/screen.scss */
+  .slider .slide .hero-social {
+    left: 40%;
+    bottom: 15%;
+  }
+
+  /*------------------------------------------end hero----------------------------------*/
+  /*------------------------------------------footer----------------------------------*/
+  /* line 985, ../sass/screen.scss */
+  footer {
+    margin-bottom: 40px;
+  }
+
+  /*------------------------------------------end footer----------------------------------*/
+}
+@media (min-width: 768px) {
+  /*------------------------------------------features----------------------------------*/
+  /* line 995, ../sass/screen.scss */
+  .features .features-list {
+    margin: 40px auto 0;
+    text-align: center;
+  }
+  /* line 999, ../sass/screen.scss */
+  .features .features-list li {
+    width: 350px;
+    margin: 50px auto;
+    text-align: left;
+  }
+  /* line 1004, ../sass/screen.scss */
+  .features .features-list li .fa {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 100px;
+  }
+  /* line 1009, ../sass/screen.scss */
+  .features .features-list li .list-title {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  /*------------------------------------------end features----------------------------------*/
+  /*------------------------------------------works----------------------------------*/
+  /* line 1018, ../sass/screen.scss */
+  .works {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 1021, ../sass/screen.scss */
+  .works .portfolio-list {
+    width: inherit;
+  }
+  /* line 1023, ../sass/screen.scss */
+  .works .portfolio-list .item {
+    width: 49%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*------------------------------------------end works----------------------------------*/
+  /*------------------------------------------sum-fun-fucts----------------------------------*/
+  /* line 1032, ../sass/screen.scss */
+  .sum-fun-fucts {
+    min-height: 800px;
+  }
+
+  /*------------------------------------------end sum-fun-fucts----------------------------------*/
+  /*------------------------------------------discuss----------------------------------*/
+  /* line 1039, ../sass/screen.scss */
+  .discuss .contact-address {
+    float: left;
+    width: 245px;
+  }
+  /* line 1043, ../sass/screen.scss */
+  .discuss .contact-address .address {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  /* line 1048, ../sass/screen.scss */
+  .discuss .contact {
+    float: left;
+    margin-right: 20px;
+  }
+  /* line 1051, ../sass/screen.scss */
+  .discuss .contact h3 {
+    margin-bottom: 30px;
+  }
+  /* line 1054, ../sass/screen.scss */
+  .discuss .contact .contact-form {
+    width: 420px;
+  }
+  /* line 1057, ../sass/screen.scss */
+  .discuss .contact .contact-form .contact-name,
+  .discuss .contact .contact-form .contact-email {
+    width: 47%;
+  }
+  /* line 1061, ../sass/screen.scss */
+  .discuss .contact .contact-form .contact-name {
+    margin-right: 17px;
+  }
+  /* line 1066, ../sass/screen.scss */
+  .discuss .contact-link {
+    float: left;
+    width: 25px;
+    margin-top: 45px;
+  }
+  /* line 1071, ../sass/screen.scss */
+  .discuss .contact-link li {
+    display: block;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+
+  /*------------------------------------------end discuss----------------------------------*/
+  /*------------------------------------------footer----------------------------------*/
+  /* line 1083, ../sass/screen.scss */
+  footer .footer-info .footer-logo {
+    float: left;
+    width: 345px;
+    margin-right: 20px;
+  }
+  /* line 1088, ../sass/screen.scss */
+  footer .footer-info .footer-form {
+    float: left;
+    width: 345px;
+    padding-bottom: 15px;
+  }
+  /* line 1093, ../sass/screen.scss */
+  footer .footer-info .footer-form h4 {
+    margin: 10px 0 20px;
+  }
+  /* line 1097, ../sass/screen.scss */
+  footer .footer-info .link-first,
+  footer .footer-info .link-second {
+    float: left;
+    width: 210px;
+    margin: 20px;
+  }
+  /* line 1104, ../sass/screen.scss */
+  footer .footer-info .authors-create {
+    float: left;
+    margin-top: 20px;
+  }
+  /* line 1107, ../sass/screen.scss */
+  footer .footer-info .authors-create .copyright {
+    clear: both;
+  }
+
+  /*------------------------------------------end footer----------------------------------*/
+}
+@media (min-width: 1024px) {
+  /*------------------------------------------hero----------------------------------*/
+  /*-------------------------------------slider---------------------------------*/
+  /*----------------------------------------------------------------------------------*/
+  /* line 1123, ../sass/screen.scss */
+  .slider .slide .hero-social {
+    left: 47%;
+    bottom: 15%;
+  }
+
+  /*------------------------------------------end hero----------------------------------*/
+  /*------------------------------------------features----------------------------------*/
+  /* line 1136, ../sass/screen.scss */
+  .features .features-list li {
+    display: inline-block;
+    width: 300px;
+    margin: 0 17px;
+  }
+  /* line 1142, ../sass/screen.scss */
+  .features .features-list li .team-social li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*------------------------------------------end features----------------------------------*/
+  /*------------------------------------------works----------------------------------*/
+  /* line 1157, ../sass/screen.scss */
+  .works .portfolio-list .item {
+    width: 24%;
+  }
+
+  /*------------------------------------------end works----------------------------------*/
+  /*------------------------------------------team----------------------------------*/
+  /* line 1166, ../sass/screen.scss */
+  .team .team-item {
+    width: 100%;
+  }
+  /* line 1168, ../sass/screen.scss */
+  .team .team-item li {
+    display: inline-block;
+    width: 24%;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 1174, ../sass/screen.scss */
+  .team .team-item li .hover-content .team-social {
+    margin-top: 10px;
+  }
+  /* line 1176, ../sass/screen.scss */
+  .team .team-item li .hover-content .team-social li {
+    margin: 0 2px;
+    padding: 0;
+  }
+
+  /*------------------------------------------end team----------------------------------*/
+  /*------------------------------------------sum-fun-fucts----------------------------------*/
+  /* line 1187, ../sass/screen.scss */
+  .sum-fun-fucts {
+    min-height: 400px;
+  }
+  /* line 1191, ../sass/screen.scss */
+  .sum-fun-fucts .fucts-item li {
+    width: 24%;
+  }
+
+  /*------------------------------------------end sum-fun-fucts----------------------------------*/
+  /*------------------------------------------discuss----------------------------------*/
+  /* line 1202, ../sass/screen.scss */
+  .discuss .contact .contact-form {
+    width: 670px;
+    margin-right: 30px;
+  }
+  /* line 1206, ../sass/screen.scss */
+  .discuss .contact .contact-form .contact-name,
+  .discuss .contact .contact-form .contact-email {
+    width: 47.5%;
+  }
+  /* line 1210, ../sass/screen.scss */
+  .discuss .contact .contact-form .contact-name {
+    margin-right: 27px;
+  }
+
+  /*------------------------------------------end discuss----------------------------------*/
+  /*------------------------------------------map-----------------------------------*/
+  /* line 1220, ../sass/screen.scss */
+  .map .fa {
+    top: 55%;
+    left: 27%;
+  }
+
+  /*------------------------------------------end map----------------------------------*/
+  /*------------------------------------------footer----------------------------------*/
+  /* line 1227, ../sass/screen.scss */
+  footer {
+    margin-bottom: 0;
+  }
+  /* line 1231, ../sass/screen.scss */
+  footer .footer-info .footer-logo {
+    float: left;
+    width: 245px;
+    margin-right: 20px;
+  }
+  /* line 1236, ../sass/screen.scss */
+  footer .footer-info .footer-form {
+    float: left;
+    width: 270px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+  }
+  /* line 1242, ../sass/screen.scss */
+  footer .footer-info .footer-form h4 {
+    margin: 10px 0 20px;
+  }
+  /* line 1246, ../sass/screen.scss */
+  footer .footer-info .link-first,
+  footer .footer-info .link-second {
+    float: left;
+    width: 108px;
+    margin: 10px;
+  }
+  /* line 1253, ../sass/screen.scss */
+  footer .footer-info .authors-create {
+    float: left;
+    width: 212px;
+    margin-top: 20px;
+  }
+  /* line 1257, ../sass/screen.scss */
+  footer .footer-info .authors-create .copyright {
+    clear: both;
+  }
+
+  /*------------------------------------------end footer----------------------------------*/
+}
+/*------------------------------------------end queries----------------------------------*/
