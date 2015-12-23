@@ -1,0 +1,36 @@
+header {
+  height: 99px;
+
+  background-color: #f6f9f9;
+
+  text-align: center;
+
+  .logo {
+    display: inline-block;
+    margin-top: 30px;
+
+    color: #2d3950;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
+
+    text-transform: uppercase;
+
+    img {
+      float: left;
+      margin-right: 15px;
+    }
+
+    span {
+      line-height: 35px;
+    }
+  }
+}
+/*--------------------------------media queries-------------------------------------------*/
+@media (min-width: 480px) {
+  header {
+    .logo {
+      float: left;
+    }
+  }
+}

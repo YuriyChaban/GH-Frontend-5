@@ -1,0 +1,22 @@
+{
+  "name": "compass",
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "authors": [
+    "Yuriy Chaban"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0"
+  },
+  "private": true
+}
