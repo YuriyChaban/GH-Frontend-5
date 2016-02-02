@@ -1,0 +1,215 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/screen.scss */
+.wrapper {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+/* line 12, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.10/sass/susy/output/support/_clearfix.scss */
+.wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 15, ../sass/screen.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: bold 14px 'OpenSans', sans-serif;
+}
+
+/* line 22, ../sass/screen.scss */
+html {
+  height: 100%;
+  background: white;
+  background-size: cover;
+}
+
+/* line 28, ../sass/screen.scss */
+#calculator {
+  width: 325px;
+  height: auto;
+  margin: 100px auto;
+  padding: 20px 20px 9px;
+  background: #9dd2ea;
+  background: linear-gradient(#9dd2ea, #8bceec);
+  border-radius: 3px;
+  box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* line 39, ../sass/screen.scss */
+.top span.clear {
+  float: left;
+}
+
+/* line 43, ../sass/screen.scss */
+.top .screen {
+  float: right;
+  width: 212px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 17px;
+  line-height: 40px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: right;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* line 59, ../sass/screen.scss */
+.keys,
+.top {
+  overflow: hidden;
+}
+
+/* line 64, ../sass/screen.scss */
+.keys span,
+.top span.clear {
+  position: relative;
+  top: 0;
+  float: left;
+  width: 66px;
+  height: 36px;
+  margin: 0 7px 11px 0;
+  cursor: pointer;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  color: #888;
+  line-height: 36px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+/* line 82, ../sass/screen.scss */
+.keys span.operator {
+  margin-right: 0;
+  background: #FFF0F5;
+}
+
+/* line 87, ../sass/screen.scss */
+.keys span.eval {
+  color: #888e5f;
+  background: #f1ff92;
+  box-shadow: 0px 4px #9da853;
+}
+
+/* line 93, ../sass/screen.scss */
+.top span.clear {
+  color: #ffffff;
+  background: #ff9fa8;
+  box-shadow: 0px 4px #ff7c87;
+}
+
+/* line 99, ../sass/screen.scss */
+.keys span:hover {
+  color: #ffffff;
+  background: #9c89f6;
+  box-shadow: 0px 4px #6b54d3;
+}
+
+/* line 105, ../sass/screen.scss */
+.keys span.eval:hover {
+  color: #ffffff;
+  background: #abb850;
+  box-shadow: 0px 4px #717a33;
+}
+
+/* line 111, ../sass/screen.scss */
+.top span.clear:hover {
+  color: #ffffff;
+  background: #f68991;
+  box-shadow: 0px 4px #d3545d;
+}
+
+/* line 117, ../sass/screen.scss */
+.keys span:active {
+  top: 4px;
+  box-shadow: 0px 0px #6b54d3;
+}
+
+/* line 122, ../sass/screen.scss */
+.keys span.eval:active {
+  top: 4px;
+  box-shadow: 0px 0px #717a33;
+}
+
+/* line 127, ../sass/screen.scss */
+.top span.clear:active {
+  top: 4px;
+  box-shadow: 0px 0px #d3545d;
+}
