@@ -1,0 +1,231 @@
+.write-us {
+	
+	.contact-form {
+		float: left;
+		max-width: 800px;
+		overflow: hidden;
+
+		.form-title {
+		    float: left;
+		    margin: 0 50% 20px 0;
+		    padding: 5px 20px;
+		    color: #FFEA00;
+		    font-size: 24px;
+		    text-transform: uppercase;
+			background: #424147;
+		}
+
+		.name-contact {
+			clear: both;
+		}
+
+		.name-contact,
+		.email-contact,
+		.subject-contact,
+		.comments-contact {
+		    color: #000;
+		    font-size: 18px;;
+			border: none;
+			padding: 10px 10px;
+		    border: none;
+		}
+
+		.name-contact,
+		.email-contact,
+		.subject-contact,
+		.comments-contact {
+			float: left;
+			width: 270px;
+			height: 50px;
+			margin: 10px 0;
+		}
+
+		.comments-contact {
+			width: 270px;
+			height: 100px;
+		}
+
+		.contact-submit {
+			float: right;
+			margin: 20px 0 10px;
+			padding: 10px 15px;
+			border: none;
+			font-family: inherit;
+			color: #fff;
+			background: #000;
+			cursor: pointer;
+			border-bottom: 3px solid #ffea00;
+			letter-spacing: 1px;
+		}
+	}
+
+	.contact-information {
+		float: left;
+		max-width: 300px;
+		width: 100%;
+		margin-top: 40px;
+
+		.title {
+			width: 170px;
+		    margin-bottom: 20px;
+		    padding: 5px 20px;
+		    color: #FFEA00;
+		    font-size: 22px;
+		    text-transform: uppercase;
+			background: #424147;
+		}
+
+		.contact-info-list {
+			margin: 66px 0 0;
+
+			li {
+				float: left;
+				clear: both;
+				margin: 19px 0 0;
+				color: #000;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 21px;
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+				.fa {
+					float: left;
+					width: 30px;
+					margin: 0 17px 13px 0;
+					height: 30px;
+					color: #fff;
+					line-height: 30px;
+					text-align: center;
+					background: #000;
+				}
+
+				.second-phone-text {
+					display: block;
+					margin-left: 95px;
+				}
+
+				.e-mail-text {
+				    padding: 2px 4px;
+					color: #ffea00;
+					background: #424147;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*-----------------media queries---------------------*/
+@media (min-width: 480px) {
+	.write-us {
+	
+		.contact-form {
+
+			.name-contact,
+			.email-contact,
+			.subject-contact,
+			.comments-contact {
+				width: 428px;
+				clear: both;
+			}
+		}
+	}	
+}
+@media (min-width: 768px) {
+	.write-us {
+	
+		.contact-form {
+
+			.name-contact,
+			.email-contact,
+			.subject-contact,
+			.comments-contact {
+				width: 380px;
+			}
+
+			.name-contact {
+				margin-top: 0;
+			}
+			
+			.contact-submit {
+				clear: both;
+			}
+		}
+
+		.contact-information {
+			float: right;
+			margin-top: 0;
+		}
+	}
+}
+@media (min-width: 1024px) {
+		.write-us {
+	
+		.contact-form {
+
+			.name-contact,
+			.email-contact,
+			.subject-contact {
+				width: 180px;
+				clear: none;
+				margin: 0 15px 0 0;
+			}
+
+			.subject-contact {
+				margin-right: 0;
+			}
+			
+			.contact-submit {
+				clear: both;
+			}
+
+			.comments-contact {
+				width: 614px;
+			}
+		}
+
+		.contact-information {
+			float: right;
+			margin-top: 0;
+		}
+	}
+}
+@media (min-width: 1200px) {
+		.write-us {
+	
+		.contact-form {
+
+			.name-contact,
+			.email-contact,
+			.subject-contact {
+				width: 236px;
+				clear: none;
+				margin: 0 15px 0 0;
+			}
+
+			.subject-contact {
+				margin-right: 0;
+			}
+			
+			.contact-submit {
+				clear: both;
+			}
+
+			.comments-contact {
+				width: 794px;
+			}
+		}
+
+		.contact-information {
+			float: right;
+			margin-top: 0;
+		}
+	}
+}
+/*-----------------end media queries---------------------*/

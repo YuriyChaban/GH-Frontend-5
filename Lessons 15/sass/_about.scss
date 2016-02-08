@@ -1,0 +1,464 @@
+@mixin transition {
+	-webkit-transition: all 0.5s ease-in-out;
+  	-moz-transition:    all 0.5s ease-in-out;
+	-o-transition:      all 0.5s ease-in-out;
+}
+@mixin about-title {
+    max-width: 205px;
+    margin: 0 auto 30px;
+    padding: 9px 21px 7px 20px;
+    text-align: center;
+    color: #ffea00;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    background-color: #424147;
+}
+
+@mixin about-description {
+	max-width: 960px;
+	margin: 0 auto 40px;
+	text-align: center;
+	color: #000;
+    font-size: 18px;
+}
+
+.hero-blog {
+
+	.blog-title {
+		padding: 22px 0 22px 22px;
+	}
+}
+
+/*----------------------intro-------------------*/
+.inroduce {
+
+	.float-about-img {
+		float: left;
+		max-width: 500px;
+		height: auto;
+		margin: 0 30px 20px 0;
+	}
+
+	.intro-title {
+		float: left;
+	    margin-bottom: 20px;
+	    text-align: left;
+		text-transform: uppercase;
+	    color: #5a595d;
+	    font-size: 24px;
+	}
+
+	.intro-description {
+		clear: both;
+	    margin-bottom: 20px;
+	    font-weight: 600;
+	    text-align: left;
+	    color: #5a595d;
+	    font-size: 14px;
+	    line-height: 24px;
+	}
+
+	.first-about,
+	.second-about {
+		float: left;
+		max-width: 380px;
+		font-size: 14px;
+	    color: #000;
+	    line-height: 24px;
+	    text-align: left;
+	}
+
+	.first-about {
+		margin-right: 20px;
+	}
+
+	.second-about {
+		margin-top: 40px;
+	}
+}
+/*----------------------end intro-------------------*/
+/*----------------------scills-------------------*/
+.scills {
+	
+	.about-title {
+		@include about-title;
+	}
+
+	.about-description {
+		@include about-description;
+	}
+
+	.first-progress,
+	.second-progress {
+		width: 100%;
+		max-width: 550px;
+	    margin-bottom: 20px;
+
+		.progress-bar {
+			overflow: hidden;
+			height: 38px;
+			margin-bottom: 20px;
+	    	background: #424147;
+
+			.persent-num {
+				float: left;
+				max-width: 55px;
+				height: 100%;
+			    padding: 8px 10px 0 10px;
+			    color: #FFEA00;
+			    font-size: 20px;
+			    background: #000;
+			    border-right: 2px solid #f6f6f6;
+			}
+
+			.progres-status {
+			    float: left;
+			    height: 100%;
+			    padding: 5px 20px 0;
+			    color: #424147;
+			    font-size: 22px;
+				background: #FFEA00;
+			}
+
+			.ninety-persent {
+				width: 170px;
+			}
+
+			.eighty-seven-persent {
+				width: 150px;
+			}
+
+			.seventy-persent {
+				width: 120px;
+			}
+
+			.seventy-five-persent {
+				width: 130px;
+			}
+			
+			.eighty-persent {
+				width: 140px;
+			}
+
+			.seventy-six-persent {
+				width: 125px;
+			}
+
+			.sixty-five-persent {
+				width: 95px;
+			}
+
+			.eighty-five-persent {
+				width: 150px;
+			}
+		}
+	}
+}
+/*----------------------end scills-------------------*/
+/*----------------------team-------------------*/
+.team {
+
+	.about-title {
+		@include about-title;
+	}
+
+	.about-description {
+		@include about-description;
+	}
+
+	.team-items {
+		margin: 0 auto;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			max-width: 220px;
+			background: url('../images/photo-item-6') no-repeat;
+			background-size: cover;
+			margin: 10px;
+			text-align: center;
+
+			.item-bg {
+				display: block;
+				max-width: 218px;
+				max-height: 218px;
+				overflow: hidden;
+				border: 4px solid #ffea00;
+				border-radius: 100%;
+			}
+
+			.work-position {
+				display: block;
+				margin: 20px auto 0;
+			    background: #424147;
+			    padding: 5px 20px;
+			    text-align: center;
+			    color: #FFEA00;
+			    font-size: 15px;
+			    line-height: 22px;
+			    text-transform: uppercase;
+		    	border-bottom: 4px solid #424147;
+		    	@include transition;
+
+			    &:hover {
+					background: #000;
+			    	border-color: #FFEA00;
+			    }
+			}
+		}
+	}
+}
+/*----------------------end team-------------------*/
+/*----------------------media queries-------------------*/
+@media (min-width: 480px) {
+/*----------------------scills-------------------*/
+	.scills {
+		
+
+		.first-progress,
+		.second-progress {
+
+			.progress-bar {
+
+				.ninety-persent {
+					width: 320px;
+				}
+
+				.eighty-seven-persent {
+					width: 300px;
+				}
+
+				.seventy-persent {
+					width: 260px;
+				}
+
+				.seventy-five-persent {
+					width: 280px;
+				}
+				
+				.eighty-persent {
+					width: 295px;
+				}
+
+				.seventy-six-persent {
+					width: 285px;
+				}
+
+				.sixty-five-persent {
+					width: 235px;
+				}
+
+				.eighty-five-persent {
+					width: 295px;
+				}
+			}
+		}
+	}
+/*----------------------end scills-------------------*/
+}
+@media (min-width: 768px) {
+/*----------------------scills-------------------*/
+	.scills {
+		
+
+		.first-progress,
+		.second-progress {
+
+			.progress-bar {
+
+				.ninety-persent {
+					width: 410px;
+				}
+
+				.eighty-seven-persent {
+					width: 390px;
+				}
+
+				.seventy-persent {
+					width: 350px;
+				}
+
+				.seventy-five-persent {
+					width: 370px;
+				}
+				
+				.eighty-persent {
+					width: 385px;
+				}
+
+				.seventy-six-persent {
+					width: 275px;
+				}
+
+				.sixty-five-persent {
+					width: 325px;
+				}
+
+				.eighty-five-persent {
+					width: 395px;
+				}
+			}
+		}
+	}
+/*----------------------end scills-------------------*/
+}
+@media (min-width: 1024px) {
+/*----------------------intro-------------------*/
+	.inroduce {
+
+		.intro-description {
+			clear: none;
+		}
+
+		.first-about {
+			clear: both;
+		}
+
+		.second-about {
+			margin-top: 0;
+		}
+	}
+/*----------------------end intro-------------------*/
+/*----------------------scills-------------------*/
+	.scills {
+		
+
+		.first-progress,
+		.second-progress {
+			float: left;
+			width: 460px;
+			.progress-bar {
+
+				.ninety-persent {
+					width: 320px;
+				}
+
+				.eighty-seven-persent {
+					width: 300px;
+				}
+
+				.seventy-persent {
+					width: 260px;
+				}
+
+				.seventy-five-persent {
+					width: 280px;
+				}
+				
+				.eighty-persent {
+					width: 295px;
+				}
+
+				.seventy-six-persent {
+					width: 285px;
+				}
+
+				.sixty-five-persent {
+					width: 235px;
+				}
+
+				.eighty-five-persent {
+					width: 295px;
+				}
+			}
+		}
+
+		.first-progress {
+			margin-right: 40px;
+		}
+	}
+/*----------------------end scills-------------------*/
+}
+@media (min-width: 1200px) {
+/*----------------------scills-------------------*/
+	.scills {
+		
+
+		.first-progress,
+		.second-progress {
+
+			.progress-bar {
+
+				.ninety-persent {
+					width: 320px;
+				}
+
+				.eighty-seven-persent {
+					width: 300px;
+				}
+
+				.seventy-persent {
+					width: 260px;
+				}
+
+				.seventy-five-persent {
+					width: 280px;
+				}
+				
+				.eighty-persent {
+					width: 295px;
+				}
+
+				.seventy-six-persent {
+					width: 285px;
+				}
+
+				.sixty-five-persent {
+					width: 235px;
+				}
+
+				.eighty-five-persent {
+					width: 315px;
+				}
+			}
+		}
+
+		.first-progress {
+			margin-left: 10%;
+		}
+	}
+/*----------------------end scills-------------------*/
+/*----------------------team-------------------*/
+	.team {
+
+		.team-items {
+
+			li {
+				margin: 10px 30px;
+			}
+		}
+	}
+/*----------------------end team-------------------*/
+/*----------------------intro-------------------*/
+	.inroduce {
+
+		.intro-title {
+			width: 64%;
+		}
+		
+		.float-about-img {
+			width: 400px;
+			margin-right: 20px;
+		}
+
+		.intro-description {
+			clear: none;
+		}
+
+		.first-about {
+			width: 365px;
+			clear: none;
+		}
+
+		.second-about {
+			width: 365px;
+			clear: none;
+			float: left;
+			margin-top: 0;
+		}
+	}
+/*----------------------end intro-------------------*/
+}
+/*----------------------end media queries-------------------*/
