@@ -1,16 +1,10 @@
 ﻿<?php
-/*
-Чтобы каждый раз не проверять введенные данные от пользователя, 
-напишем функцию для фильтрации этих данных и 
-уже будем применять эту функцию 
-*/
 function clearData($data, $type='i'){
 	switch($type){
 		case 'i': return $data*1; break;
 		case 's': return trim(strip_tags($data)); break;
 	}
 }
-/*Заводим переменную куда будем записывать результат*/
 $output = '';
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$number1 = clearData($_POST['number1']);
