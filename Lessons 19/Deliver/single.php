@@ -50,7 +50,7 @@
                 <?php the_content(); ?>
             </article>
             <div class="social-share">
-
+                <?php comments_template(); ?>
             </div>
         </div>
     </div>
