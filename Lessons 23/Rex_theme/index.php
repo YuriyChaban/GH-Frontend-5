@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-
+<!-- для лендинга нужен отдельно пейдж темплейт, а не в индексе все делать -->
     <!-- Start header section -->
     <header id="header">
         <div class="header-inner">
@@ -10,6 +10,7 @@
             else:
                 echo get_bloginfo('name') . '<span>' . get_bloginfo('description') . '</span>';
             endif; ?>
+
             <div class="header-overlay">
                 <div class="header-content">
                     <!-- Start header content slider -->
@@ -18,6 +19,7 @@
                         <span>MOST Design</span>
                         <span>MOST Valuable</span>
                         IDEA</h2>
+                    <!-- это должна быть динамика -->
                     <!-- End header content slider -->
                     <!-- Header btn area -->
                     <div class="header-btn-area">
@@ -87,12 +89,12 @@
                             </h2>
                             <span class="tittle-line"></span>
                             <p><?php _e('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                labore et dolore magna aliqua. Ut enim ad minim veniamo laboris nis', 'rex'); ?></p>
+                                labore et dolore magna aliqua. Ut enim ad minim veniamo laboris nis', 'rex'); ?></p> <!-- это все через кастомайзер нужно делать -->
                         </div>
                         <div class="welcome-content">
                             <ul class="wc-table">
                                 <?php
-                                $args = array('post_type' => 'about', 'post_per_page' => 20);
+                                $args = array('post_type' => 'about', 'post_per_page' => 20); // с чего ты решил, что тут должно быть именно 20 постов?
                                 $the_query = new WP_Query($args);
 
                                 if ($the_query->have_posts()) :
@@ -110,9 +112,10 @@
                                     <?php wp_reset_postdata(); ?>
 
                                     <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+                                    <!-- не понимаю зачем тебе тут это? -->
 
                                 <?php else: ?>
-                                <p><?php _e('Sorry, post not found', 'BlogName'); ?>
+                                <p><?php _e('Sorry, post not found', 'BlogName'); // нужно писать правильный textdomain ?>
                                     <?php endif; ?>
                             </ul>
                         </div>
@@ -135,6 +138,7 @@
                                             while ($the_query->have_posts()) : $the_query->the_post(); ?>
                                                 <?php the_post_thumbnail(); ?>
                                             <?php endwhile; ?>
+                                            <!-- и это через кастомайзер, а не через пост тайп -->
                                             <?php wp_reset_postdata(); ?>
 
                                             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
@@ -201,7 +205,7 @@
                     <?php
                     $args = array('post_type' => 'impressive_template', 'post_per_page' => 20);
                     $the_query = new WP_Query($args);
-
+                    // абсолютно не верно, не путай назначение пост тайпа с простым текстом
                     if ($the_query->have_posts()) :
                         while ($the_query->have_posts()) : $the_query->the_post(); ?>
                             <h2><?php the_title(); ?></h2>
@@ -230,7 +234,7 @@
                             <span class="tittle-line"></span>
                             <p><?php _e('Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                                 laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                architecto', 'rex'); ?></p>
+                                architecto', 'rex'); ?></p> <!-- аналогично во всех текстах  -->
                         </div>
                         <!-- Start team content -->
                         <div class="team-content">
@@ -243,6 +247,7 @@
                                     while ($the_query->have_posts()) : $the_query->the_post(); ?>
                                         <li>
                                             <div class="team-item wow fadeInUp">
+                                                <!-- всегда нужно проверять на наличие миниатюры -->
                                                 <?php the_post_thumbnail(); ?>
                                                 <div class="team-info">
                                                     <h2><?php the_content(); ?></h2>
@@ -337,13 +342,14 @@
                         <div class="portfolio-content">
                             <!-- portfolio menu -->
                             <div class="portfolio-menu">
-                                <ul>
+                                <ul><!-- это можно было вывести циклом, такой способ доставания неверный и лучше вытягивать термы, а не таксономии -->
                                     <li class="filter"
                                         data-filter="<?php $terms = get_taxonomies($post->ID, 'portfolio_tax');
                                         foreach ($taxonomy as $taxonomy) {
                                             echo $taxonomy->id;
                                         } ?>"><?php _e('All', 'rex'); ?>
                                     </li>
+                                    <!-- у тебя это все не работает-->
                                     <li class="filter"
                                         data-filter="<?php $terms = get_taxonomies($post->ID, 'portfolio_tax');
                                         foreach ($taxonomy as $taxonomy) {
@@ -507,7 +513,7 @@
                             </div>
                             <div class="testimonial-conten">
                                 <!-- Start testimonial slider -->
-                                <div class="testimonial-slider">
+                                <div class="testimonial-slider"> <!-- слайдер поломан -->
                                     <?php
                                     $args = array('post_type' => 'slider', 'post_per_page' => 20);
                                     $the_query = new WP_Query($args);
@@ -520,7 +526,7 @@
                                         <div class="single-testimonial">
                                             <?php the_post_thumbnail(); ?>
                                             <p><?php the_title(); ?></p>
-                                            <span>
+                                            <span> <!-- слайдер нужно делать пост тайпом, а не таксономией -->
                                                 <?php
                                             $terms = get_the_terms($post->ID, 'slider_tax');
                                                         foreach ($terms as $term) {
@@ -563,7 +569,7 @@
                         <div class="from-blog-content">
                             <div class="row">
 
-                                <?php $posts = query_posts($query_string . '&posts_per_page=3'); if (have_posts()) : ?>
+                                <?php $posts = query_posts($query_string . '&posts_per_page=3'); if (have_posts()) : ?> <!--никогда не используй таку query_posts -->
                                     <?php while (have_posts()): the_post(); ?>
                                         <div class="col-md-4">
                                             <article class="single-from-blog">
@@ -617,7 +623,7 @@
                     <div class="client-area">
                         <ul class="client-table">
                             <?php
-                            $args = array('post_type' => 'company_logo_slider', 'post_per_page' => 20);
+                            $args = array('post_type' => 'company_logo_slider', 'post_per_page' => 20); // пост тайпы нужно называть через "-"
                             $the_query = new WP_Query($args);
 
                             if ($the_query->have_posts()) :
@@ -663,6 +669,7 @@
     </section>
     <!-- End Contact section -->
     <!-- Start Google Map -->
+    <!-- карта тоже должна быть динамической -->
     <section id="google-map">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d6303.67022361714!2d144.955652!3d-37.817331!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-37.8173306!2d144.9556518!5e0!3m2!1sen!2sbd!4v1442411159706"
@@ -672,5 +679,5 @@
 
 
 <?php
-get_sidebar();
+get_sidebar(); // к чему тут сайдбар? 
 get_footer();

@@ -47,6 +47,7 @@
     <!-- End menu section -->
     <!-- Start blog banner section -->
     <section id="blog-banner">
+        <!-- картинку нужно делать динамичной -->
         <?php if (get_theme_mod('gootheme_single_header_bg')) :
             echo '<img src="' . esc_url(get_theme_mod('gootheme_single_header_bg')) . '">';
         else:
@@ -116,7 +117,7 @@
                                                 <h4><?php _e('This is h4 title', 'rex'); ?></h4>
                                                 <h5><?php _e('This is h5 title', 'rex'); ?></h5>
                                                 <h6><?php _e('This is h6 title', 'rex'); ?></h6>
-
+                                                <!-- єто у тебя все должно быть из админки!  -->
                                             </div>
                                         </article>
                                         <div class="blog-comment">
@@ -128,6 +129,7 @@
                                     <!-- End single blog post -->
                                 </div>
                             </div>
+                            <!-- сайдбар должен быть в сайдбаре -->
                             <div class="col-lg-4 col-md-5 col-sm-12">
                                 <?php if (is_active_sidebar('site-sidebar')) :
                                     dynamic_sidebar('site-sidebar');
@@ -143,5 +145,5 @@
 
 
 <?php
-get_sidebar();
+get_sidebar(); // это нелогично получается если ты сайдбар выводишь статично
 get_footer();

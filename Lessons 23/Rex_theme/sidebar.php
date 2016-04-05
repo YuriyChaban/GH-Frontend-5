@@ -16,3 +16,5 @@
 <!--	--><?php //dynamic_sidebar( 'site-sidebar' ); ?>
 <!--</aside>-->
 <!-- #secondary-->
+
+<!-- шикарный сайдбар -->
